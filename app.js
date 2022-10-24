@@ -18,16 +18,27 @@ const filterAnimals = (data, filterTerm) => {
     });
 };
 
+const count = (data) => {
+    data.forEach(country => {
+        country.name = `${country.name} [${country.people !== undefined ? country.people.length : 0}]`;
+        country.people.forEach(person => person.name = `${person.name} [${person.animals !== undefined ? person.animals.length : 0}]`);
+    });
+    return data;
+};
+
 const cmd = (input, arg) => {
     let filterRegex = /^(--filter=(.+))$/;
     if (arg.match(filterRegex)) {
         return filterAnimals(input, arg.match(filterRegex)[2]);
     }
+    if (arg === '--count') {
+        return count(input);
+    }
 
     return [];
 }
 
-module.exports = {filterAnimals, cmd}
+module.exports = {filterAnimals, count, cmd}
 
 
 if (process.argv[2]) {
