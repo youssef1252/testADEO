@@ -1,0 +1,24 @@
+{
+  "name": "test-adeo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha *.spec.js",
+    "test-watch": "mocha --watch *.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youssef1252/testAdeo.git"
+  },
+  "author": "youssef benkhair",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youssef1252/testAdeo/issues"
+  },
+  "homepage": "https://github.com/youssef1252/testAdeo#readme",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.1.0"
+  }
+}
