@@ -8,21 +8,21 @@
 
 $ node app.js --filter=ry
 [
-   { name: 'Satanwi',
-     people:
-      [ { name: 'Elmer Kinoshita',
-          animals:
-           [ { name: 'Wrysel' },
-        { name: 'Cora Howell',
-          animals:
-           [ { name: 'Rrya' },
-             { name: 'Pronryorn' } ] },
-        { name: 'Anthony Bruno',
-          animals:
-           [ { name: 'Caryxcal' },
-             { name: 'Tryantula' },
-             { name: 'Oryx' } ] } ] } ]
-...
+   {
+        name: 'Uzuzozne',
+        people: [{
+            name: 'Lillie Abbott',
+            animals:
+                [{name: 'John Dory'}]
+        }]
+    }, {
+        name: 'Satanwi',
+        people: [{
+            name: 'Anthony Bruno',
+            animals:
+                [{name: 'Oryx'}]
+        }]
+    }
 ]
 ```
 - the next goal is to count People and Animals by adding the count of children in the name, eg. Satanwi [2].
