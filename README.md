@@ -47,3 +47,7 @@ node app.js --count
 ...
 ]
 ```
+
+## Author
+
+Youssef Benkhair
