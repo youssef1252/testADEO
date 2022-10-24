@@ -1,5 +1,3 @@
-## testAdeo
-
 # Context
 
 - Create Two command-line Node.js. This program filter a list of element containing a pattern from the following file data.js , there are Countries containing Peoples containing Animals.
